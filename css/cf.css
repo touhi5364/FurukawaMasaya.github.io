@@ -1,0 +1,182 @@
+html, body{
+	height:1080px;
+	width:1080px;
+	/*overflow:hidden;*/
+}
+
+html {
+	background: #0af;
+	height:1080px;
+	width:1080px;
+	/*overflow: hidden;*/
+
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	height:1080px;
+	width:1080px;
+	/*overflow:hidden;*/
+
+}
+
+.box {
+	width: 1080px;
+	height: 1080px;
+	border-radius: 5px;
+	box-shadow: 0 2px 30px rgba(black, .2);
+	background: lighten(#f0f4c3, 10%);
+	position: fixed;
+	overflow: hidden;
+	transform: translate3d(0,0,0);
+}
+
+.wave {
+	opacity: .4;
+	position: absolute;
+	top: -20%;
+	left: 15%;
+	background: #eee;
+	width: 200%;
+	height: 200%;
+	border-radius:50% 50% 50% 70%/50% 50% 70% 60%;
+	margin-left: -65%;
+	margin-top: -150%;
+	transform-origin: 50% 48%;
+	animation: drift 3000ms infinite linear;
+}
+
+.wave.two{
+	animation: drift 5000ms infinite linear;
+	opacity: .1;
+	background: yellow;
+}
+
+.wave.-three{
+	animation: drift 5000ms infinite linear;
+}
+
+.box:after {
+	content: '';
+	display: block;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(#e8a, 1),rgba(#def, 0) 80%,rgba(white, .5));
+	z-index: 11;
+	transform: translate3d(0,0,0);
+}
+
+.title {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	line-height: 300px;
+	text-align: center;
+	transform: translate3d(0,0,0);
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Playfair Display',serif;
+	letter-spacing: .4em;
+	font-size: 24px;
+	text-shadow: 0 1px 0 rgba(black, .1);
+	text-indent: .3em;
+
+}
+canvas{
+	position: relative;
+	width: 1080px;
+	height: 1080px;
+
+}
+.Buttom1{
+	display:block;
+	height: 400px;
+	width: 400px;
+}
+.canvas img{
+	display:none;
+}
+.Page_title{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	line-height: 300px;
+	text-align: center;
+	transform: translate3d(0,0,0);
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Playfair Display',serif;
+	letter-spacing: .4em;
+	font-size: 70px;
+	text-shadow: 0 1px 0 rgba(black, .1);
+	text-indent: .3em;
+
+}
+.Page-title{
+	transition-delay: 4s;
+}
+
+@keyframes drift {
+	/*from{transform:translateY(500px);}*/
+	from{transform: rotate(0deg);}
+	from{transform: rotate(360deg);}
+}
+
+/*.awaBox{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}*/
+
+/*.awa{
+	list-style: none;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	/*animation: anime 2s 0s infinite alternate; */
+	/*animation-delay:0;
+
+
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+
+	animation-name: anime;
+	animation-timing-function: linear;
+
+
+
+}*/
+/*@keyframes anime{
+	10%{
+		transform: translateY(-200px);
+	}
+
+	90%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform:translateY(-1000px);
+	}
+}*/*/
+
+
+
+
+
+
+
+
+
+
+
